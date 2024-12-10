@@ -1,6 +1,6 @@
-## ***Moving Infrared Small Target Detection***
+## ***Motion Prior Knowledge Learning with Homogeneous Language Descriptions for Moving Infrared Small Target Detection***
 
-The implementation of the paper **Motion Prior Knowledge Learning with Homogeneous Language Descriptions for Moving Infrared Small Target Detection**
+**The 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025)**
 
 ## Datasets (bounding box-based)
 - Datasets are available at [`ITSDT-15K`](https://drive.google.com/file/d/149HdOo8078My1FDiI8mmkH-KXJB0dvXj/view?usp=sharing) and [`IRDST`](https://pan.baidu.com/s/1ZYeJMhXMwCwj-wnjvSnHQA?pwd=cctd)(code: cctd). Or you can download `IRDST` directly from the [website](https://xzbai.buaa.edu.cn/datasets.html). 
