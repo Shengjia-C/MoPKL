@@ -139,7 +139,7 @@ python predict.py
 - PR curves on ITSDT-15K and IRDST datasets in this paper.
 -We provide the [results](https://pan.baidu.com/s/1aQoImRzJOAuhNnoaQMKEXw?pwd=4ves) (4ves)  on 'ITSDT-15K' and 'IRDST', and you can plot them using Python and matplotlib.
 
-<img src="/README/PR.png" width="800px">
+<img src="/README/PR.png" width="600px">
 
 
 ## Contact
