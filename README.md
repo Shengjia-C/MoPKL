@@ -55,7 +55,7 @@ ITSDT-15K
 
 ### Language Descriptions
 
-- We provide encoded [language description embedding representations](https://pan.baidu.com/s/1GOxLlOiXHsRuHUwYr3Fh5g?pwd=xbet)(code: xbet) of `ITSDT-15K` and `IRDST` datasets. 
+- We provide encoded language description [embedding representations](https://pan.baidu.com/s/1GOxLlOiXHsRuHUwYr3Fh5g?pwd=xbet)(code: xbet) of `ITSDT-15K` and `IRDST` datasets. 
 There are two embedded representations in this file: `emb_train_IRDST.pkl` and `emb_train_IRDST.pkl`.
 
 - We also provide initial language description [text files](https://pan.baidu.com/s/17OOSx0Kfoc5N-aeQU6VcAw?pwd=bn38)(code: bn38) that you can explore further with vision-language models.
