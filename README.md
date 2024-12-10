@@ -61,7 +61,7 @@ There are two embedded representations in this file: `emb_train_IRDST.pkl` and `
 - We also provide initial language description [text files](https://pan.baidu.com/s/17OOSx0Kfoc5N-aeQU6VcAw?pwd=bn38)(code: bn38) that you can explore further with vision-language models.
 - Take the ITSDT-15K dataset as an example, modify the path of the `dataloader_for_ITSDT` for language description embedding representations:
 ```python
-#Path to your emb_train_ITSDT.pkl
+# Path to your emb_train_ITSDT.pkl
 
 description = pickle.load(open('/home/MoPKL/emb_train_ITSDT.pkl', 'rb'))
 ```
@@ -79,7 +79,7 @@ CUDA_VISIBLE_DEVICES=0 python train_ITSDT.py
 ```
 - You need to change the path of the `json file` of test sets. For example:
 ```python
-#Use ITSDT-15K dataset for test
+# Use ITSDT-15K dataset for test
 
 cocoGt_path         = '/home/public/ITSDT-15K/instances_test2017.json'
 dataset_img_path    = '/home/public/ITSDT-15K/'
@@ -93,7 +93,7 @@ python test.py
 ```python
 # mode = "video" #Predict a sequence
 
-mode = "predict"  #Predict a single-frame image 
+mode = "predict"  # Predict a single-frame image 
 ```
 ```python
 python predict.py
