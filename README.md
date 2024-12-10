@@ -1,10 +1,10 @@
 # DMIST-Benchmark 
-## ***Dense Moving Infrared Small Target Detection***
+## ***Moving Infrared Small Target Detection***
 
-The implementation of the paper [**Motion Prior Knowledge Learning with Homogeneous Language Descriptions for Moving Infrared Small Target Detection**]
+The implementation of the paper **Motion Prior Knowledge Learning with Homogeneous Language Descriptions for Moving Infrared Small Target Detection**
 
 ## Datasets (bounding box-based)
-- Datasets are available at `ITSDT-15K` [Google](https://drive.google.com/file/d/149HdOo8078My1FDiI8mmkH-KXJB0dvXj/view?usp=sharing) and `IRDST` [Baidu](https://pan.baidu.com/s/1ZYeJMhXMwCwj-wnjvSnHQA?pwd=cctd)(code: cctd). Or you can download `IRDST` directly from the [website](https://xzbai.buaa.edu.cn/datasets.html). 
+- Datasets are available at [`ITSDT-15K`](https://drive.google.com/file/d/149HdOo8078My1FDiI8mmkH-KXJB0dvXj/view?usp=sharing) and [`IRDST`](https://pan.baidu.com/s/1ZYeJMhXMwCwj-wnjvSnHQA?pwd=cctd)(code: cctd). Or you can download `IRDST` directly from the [website](https://xzbai.buaa.edu.cn/datasets.html). 
 
 - You need to reorganize these datasets in a format similar to the `coco_train_ITSDT.txt` and `coco_val_ITSDT.txt` files we provided (`.txt files` are used in training).  We provide the `.txt files` for ITSDT-15K and IRDST.
 For example:
@@ -12,7 +12,7 @@ For example:
 train_annotation_path = '/home/ITSDT-15K/coco_train_ITSDT.txt'
 val_annotation_path = '/home/ITSDT-15K/coco_val_ITSDT.txt'
 ```
-- Or you can generate a new `txt file` based on the path of your datasets. `.txt files` (e.g., `coco_train_ITSDT.txt`) can be generated from `.json files` (e.g., `instances_train2017.json`). We also provide all `.json files` for `ITSDT-15K` [Google](https://drive.google.com/file/d/149HdOo8078My1FDiI8mmkH-KXJB0dvXj/view?usp=sharing)/[Google](https://drive.google.com/drive/folders/13CvH9muxs-9fcgeSZJWraw1StWxE3zek?usp=sharing) and `IRDST` [Baidu](https://pan.baidu.com/s/1ZYeJMhXMwCwj-wnjvSnHQA?pwd=cctd)(code: cctd).
+- Or you can generate a new `txt file` based on the path of your datasets. `.txt files` (e.g., `coco_train_ITSDT.txt`) can be generated from `.json files` (e.g., `instances_train2017.json`). We also provide all `.json files` for [`ITSDT-15K`](https://drive.google.com/file/d/149HdOo8078My1FDiI8mmkH-KXJB0dvXj/view?usp=sharing) and [`IRDST`](https://pan.baidu.com/s/1ZYeJMhXMwCwj-wnjvSnHQA?pwd=cctd)(code: cctd).
 
 ``` python 
 python utils_coco/coco_to_txt.py
@@ -62,7 +62,8 @@ There are two embedded representations in this file: `emb_train_IRDST.pkl` and `
 - We also provide initial language description [text files](https://pan.baidu.com/s/17OOSx0Kfoc5N-aeQU6VcAw?pwd=bn38)(code: bn38) that you can explore further with vision-language models.
 - Take the ITSDT-15K dataset as an example, modify the path of the `dataloader_for_ITSDT` for language description embedding representations:
 ```python
-#(path to your emb_train_ITSDT.pkl) 
+#Path to your emb_train_ITSDT.pkl
+
 description = pickle.load(open('/home/MoPKL/emb_train_ITSDT.pkl', 'rb'))
 ```
 
@@ -79,7 +80,8 @@ CUDA_VISIBLE_DEVICES=0 python train_ITSDT.py
 ```
 - You need to change the path of the `json file` of test sets. For example:
 ```python
-#Use ITSDT-15K dataset for test.
+#Use ITSDT-15K dataset for test
+
 cocoGt_path         = '/home/public/ITSDT-15K/instances_test2017.json'
 dataset_img_path    = '/home/public/ITSDT-15K/'
 ```
@@ -91,6 +93,7 @@ python test.py
 - We support `video` and `single-frame image` prediction.
 ```python
 # mode = "video" #Predict a sequence
+
 mode = "predict"  #Predict a single-frame image 
 ```
 ```python
